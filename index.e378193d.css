@@ -1,0 +1,147 @@
+.stars {
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  display: flex;
+}
+
+.stars__star {
+  background-image: url("star.fa806e3c.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.stars__star:not(:first-child) {
+  margin-left: 4px;
+}
+
+.stars--1 .stars__star:nth-child(-n+1), .stars--2 .stars__star:nth-child(-n+2), .stars--3 .stars__star:nth-child(-n+3), .stars--4 .stars__star:nth-child(-n+4), .stars--5 .stars__star:nth-child(-n+5) {
+  background-image: url("star-active.2be54011.svg");
+}
+
+.button {
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #00acdc;
+  border: 1px solid #00acdc;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 38px;
+  transition: background-color .3s, color .3s;
+}
+
+.button:hover {
+  color: #00acdc;
+  background-color: #fff;
+}
+
+html {
+  color: #060b35;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+}
+
+.card {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  width: 200px;
+  padding: 32px 16px 16px;
+}
+
+.card__content {
+  flex-direction: column;
+  gap: 15px;
+  display: flex;
+}
+
+.card__image-container {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 21px;
+  display: flex;
+}
+
+.card__image {
+  background: url("imac.d0e0225a.jpeg") center / contain no-repeat;
+  width: 160px;
+  height: 134px;
+}
+
+.card__title {
+  margin: 0;
+  padding: 4px 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.card__text {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.card__text--secondary {
+  color: #616070;
+}
+
+.card__text--small {
+  color: #616070;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.card__text--link {
+  color: #060b35;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.card__text--link:hover {
+  text-decoration: underline;
+}
+
+.card__rates-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  display: flex;
+}
+
+.card__price {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1px;
+  display: flex;
+}
+
+.card__price-value {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.card__button {
+  width: 100%;
+}
+/*# sourceMappingURL=index.e378193d.css.map */
